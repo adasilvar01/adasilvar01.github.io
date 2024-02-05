@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="widh=device-widht, initial-scale=1.0">
+	<meta name="author" content="Alex">
+	<meta name="description" content="contenido">
+	<meta name="keywords" content="HTML">
+	<tittle> <center>FORMULARIO ALEX </center></title>
+	<link href="./css/main.css">
+
+	<style>
+		body{
+      font-size: 16px;
+      background-color:cadetblue;
+    }
+    
+    
+	</style>
+
+</head>
+
+<body> 
+    <center>
+	<h1><fieldset>Datos Personales</h1></fieldset>
+    
+    <fieldset>
+    <div>
+        <p>
+          Nombre:
+            <input type="text" name="nombre"><br>
+          Apellidos: 
+            <input type="text" name="apellidos"><br>
+          Nacionalidad: 
+            <input type="text" name="nacionalidad"><br>
+            Dni:
+            <input type="text" name="Dni"><br>
+          Telefono: 
+            <input type="text" name="Telefono"><br>
+          Codigo Postal: 
+            <input type="text" name="Codigo Postal"><br>
+          </p>
+        </div>
+        <br>
+
+        <div>
+          Género:
+          <select name="genero">
+            <option>Masculino</option>
+            <option>Femenino</option>
+          </select>
+          <br>
+
+        Fecha:
+        <input type="date" name="fecha">
+        <br>
+      </div>
+        <br>
+      <div>
+          Selecciona tus intereses:<br>
+          <input type="checkbox" name="peliculas"> Películas<br>
+          <input type="checkbox" name="deportes"> Deportes<br>
+          <input type="checkbox" name="videojuegos"> Videojuegos<br>
+          <br>
+          ¿Que prefieres?:<br>
+          <input type="radio" name="Estudiar"> Estudiar<br>
+          <input type="radio" name="Trabajar"> Trabajar<br>
+          <input type="radio" name="Ninguna"> Ninguna de las opciones<br>
+          <br>
+          Selecciona un vehiculo:<br>
+          <select multiple name="categorias[]">
+            <option value="coche">Coche</option>
+            <option value="avion">Avion</option>
+            <option value="Barco">Barco</option>
+            <option value="bicicleta">Bicicleta</option>
+          </select>
+        </div>
+        <br>
+          ¿Indique su nivel (de 0 a 6)?<br>
+          <input type="range" name="rango"
+          min="0" max="10" list="lista-rango">
+          <datalist id="lista-rango">
+          <option value="2">
+          <option value="4">
+          <option value="6">
+          <option value="8">
+          </datalist>          
+          <br>
+        Elija un color:<br>
+        <input type="color" name="colorElegido"><br>
+      </p>
+      <input type="submit" value="Enviar este formulario" />
+    </fieldset>
+    </center>
+  
+
+
+</body>
+
+</html>
